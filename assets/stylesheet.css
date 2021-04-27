@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Body */
+body {
+    background-color: hsl(257, 40%, 49%);
+    padding: 3em;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.logo img {
+    width: 15%;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.main-pic {
+    width: 85%;
+}
+
+
+/* Right Container */
+.right-container {
+    flex-basis: 35%;
+    margin: 3em auto;
+    margin-left: -25px;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px; 
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.info {
+    padding: 1em 0em;
+    line-height: 25px;
+    font-size: 14px;
+    color: rgb(232, 230, 230);
+}
+
+
+/* Button */
+a {
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    background-color: white;
+    color:hsl(257, 40%, 49%);
+    padding: 15px 50px;
+    box-shadow: 4px 4px 10px 2px hsl(258, 40%, 33%);
+}
+
+a:hover, a:active {
+    background-color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+/* Icons */
+.icons {
+    float: right;
+}
+
+i {
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+i:hover, i:active {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+/* Tablet Screen Sizes */
+
+@media only screen and (max-width: 992px) {
+
+.logo img {
+    width: 30%;
+}
+
+.main-container {
+    display: block;
+}
+    
+.main-pic {
+    width: 100% !important;
+}
+
+.right-container {
+    width: 100%;
+}
+
+.info {
+    font-size: 18px;
+}
+
+        
+}
+
+
+
+
+
+/* Mobile Screen Sizes */
+
+@media only screen and (max-width: 600px) {
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo img {
+    width: 50%;
+    float: left;
+    margin-top: -10px;
+}
+
+.main-container {
+    display: block;
+    margin-top: 5em;
+}
+
+.main-pic {
+    width: 100% !important;
+}
+
+.right-container {
+    width: 100%;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.info {
+    padding: 1em 0em;
+    font-size: 14px;
+}
+
+a {
+    padding: 15px 70px;
+}
+
+.icons {
+    float: none;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+}
+
+/* @media only screen and (max-width: 992px) {
+
+.main-container {
+    display: block;
+}
+
+.main-pic {
+    width: 100%;
+}
+
+   
+    
+} */
